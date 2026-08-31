@@ -1,0 +1,9 @@
+/* TEAM */
+Desenvolvido por: Inovamind.dev
+Site: https://www.inovamind.dev
+Local: Itabira/MG, Brasil
+
+/* SITE */
+Loja: Bike Mania Itabira
+Plataforma: e-commerce próprio (FastAPI + PostgreSQL)
+Padrões: HTML5, CSS3, PWA, LGPD

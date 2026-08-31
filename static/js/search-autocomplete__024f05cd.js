@@ -1,0 +1,10 @@
+(function(){'use strict';const DEBOUNCE_MS=250;const MIN_CHARS=2;function fmtPrice(v){if(v===null||v===undefined)return'';return'R$ '+Number(v).toFixed(2).replace('.',',');}
+function initForm(form){const input=form.querySelector('input[name="q"]');if(!input||input.dataset.acWired)return;input.dataset.acWired='1';const box=document.createElement('div');box.className='search-suggestions hidden';box.setAttribute('role','listbox');form.appendChild(box);let timer=null;let lastQuery='';let controller=null;function close(){box.classList.add('hidden');box.replaceChildren();}
+function render(results){box.replaceChildren();if(!results||results.length===0){close();return;}
+results.forEach((r)=>{const a=document.createElement('a');a.className='search-suggestion';a.href=r.url;a.setAttribute('role','option');const name=document.createElement('span');name.className='search-suggestion__name';name.textContent=r.name;a.appendChild(name);if(r.price!==null&&r.price!==undefined){const price=document.createElement('span');price.className='search-suggestion__price';price.textContent=fmtPrice(r.price);a.appendChild(price);}
+box.appendChild(a);});box.classList.remove('hidden');}
+async function fetchSuggestions(q){if(controller)controller.abort();controller=new AbortController();try{const resp=await fetch('/api/search-suggestions?q='+encodeURIComponent(q),{signal:controller.signal,headers:{Accept:'application/json'}});if(!resp.ok){close();return;}
+const data=await resp.json();if(data.q!==input.value.trim())return;render(data.results);}catch(e){}}
+input.addEventListener('input',()=>{const q=input.value.trim();if(q===lastQuery)return;lastQuery=q;if(timer)clearTimeout(timer);if(q.length<MIN_CHARS){close();return;}
+timer=setTimeout(()=>fetchSuggestions(q),DEBOUNCE_MS);});input.addEventListener('keydown',(e)=>{if(e.key==='Escape')close();});document.addEventListener('click',(e)=>{if(!form.contains(e.target))close();});}
+document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('.search-form').forEach(initForm);});})();

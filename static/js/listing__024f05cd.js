@@ -1,0 +1,1 @@
+(function(){const sortSel=document.getElementById('sort');if(!sortSel)return;sortSel.addEventListener('change',()=>sortSel.form.submit());})();

@@ -1,0 +1,5 @@
+Contact: mailto:security@inovamind.dev
+Expires: 2027-06-28T00:00:00.000Z
+Preferred-Languages: pt-BR, en
+Canonical: https://bikemaniaitabira.com.br/.well-known/security.txt
+Policy: https://bikemaniaitabira.com.br/politica-de-privacidade
