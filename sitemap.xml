@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bikemaniaitabira.com.br/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -212,6 +212,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://bikemaniaitabira.com.br/categoria/camisas/</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://bikemaniaitabira.com.br/categoria/valvulas/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -285,12 +291,6 @@
   </url>
   <url>
     <loc>https://bikemaniaitabira.com.br/categoria/calcas/</loc>
-    <lastmod>2026-05-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://bikemaniaitabira.com.br/categoria/camisas/</loc>
     <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
