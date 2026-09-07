@@ -435,7 +435,7 @@
     <div class="row">
       <div class="col-md-8">
         <article class="page-content">
-          <div class="page-body"><p><small>Última atualização: 12 de maio de 2026</small></p>
+          <div class="page-body"><p><small>Última atualização: 7 de setembro de 2026</small></p>
 
 <p>A <strong>Bike Mania Itabira</strong>, operada pela <strong>Inovamind</strong>, trata dados pessoais em conformidade com a <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener">Lei nº 13.709/2018 (LGPD)</a>.</p>
 
@@ -447,6 +447,7 @@
   <li>Endereço de entrega e cobrança.</li>
   <li>Pedidos, itens, valores pagos, formas de pagamento.</li>
   <li>Dados técnicos automáticos: IP proxy via Cloudflare, user-agent, páginas visitadas.</li>
+  <li>Estatísticas de acesso: páginas abertas, site de origem (apenas o domínio, nunca o endereço completo nem o termo pesquisado), tipo de dispositivo e a região aproximada (cidade, estado e país). <strong>O seu IP não é armazenado nessas estatísticas</strong>: ele é usado uma única vez para descobrir a região e não é gravado. O controle de repetição usa um código irreversível derivado do IP, do qual não é possível voltar ao endereço original.</li>
 </ul>
 
 <h2>2. Base legal</h2>
@@ -461,6 +462,7 @@
   <li>Pedidos e itens (<code>app_orders</code>, <code>app_order_items</code>): <strong>5 anos</strong> após a última operação fiscal (NF-e, Receita Federal/CTN art. 173).</li>
   <li>Cadastro de cliente: durante a relação ativa + 5 anos.</li>
   <li>Logs de acesso: 90 dias.</li>
+  <li>Estatísticas de acesso (<code>app_visitas</code>): 24 meses, em forma agregada e sem IP.</li>
 </ul>
 
 <h2>4. Operadores e transferências internacionais</h2>
@@ -473,6 +475,7 @@
   <li><strong>PagBank</strong> (cartão de crédito): Brasil.</li>
   <li><strong>Banco Inter</strong> (PIX): Brasil.</li>
   <li><strong>ViaCEP</strong> (consulta de CEP para cálculo de frete): Brasil.</li>
+  <li><strong>ip-api.com</strong> (consulta da região aproximada a partir do IP, para as estatísticas de acesso): EUA (transferência internacional). Recebe apenas o endereço IP, no momento do acesso, e devolve cidade, estado e país; nenhum outro dado seu é enviado.</li>
 </ul>
 <p>As transferências internacionais indicadas acima ocorrem mediante garantias de conformidade com a LGPD (art. 33), limitadas às finalidades descritas nesta política.</p>
 
